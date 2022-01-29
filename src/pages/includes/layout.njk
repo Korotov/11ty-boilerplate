@@ -1,0 +1,55 @@
+---
+title: My website
+---
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌀️ {{ title }}</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header" id="page-top">
+            <div class="logo">
+                <img src="/images/logo.svg" alt="" class="logo__image" />
+                <span class="logo__title">My Title</span>
+                <span class="logo__tagline">Our tagline</span>
+            </div>
+            <nav class="main-menu">
+                <ul class="main-menu__list main-menu__list--hide" id="mainmenu__list">
+                    <li class="main-menu__item"><a href="#komn" class="main-menu__link"><span
+                                class="main-menu__item-text">Главное</span></a></li>
+                    <li class="main-menu__item"><a href="" class="main-menu__link"><span
+                                class="main-menu__item-text">Каталог</span></a></li>
+                    <li class="main-menu__item"><a href="" class="main-menu__link"><span
+                                class="main-menu__item-text">Услуги</span></a></li>
+                    <li class="main-menu__item"><a href="" class="main-menu__link"><span
+                                class="main-menu__item-text">Контакты</span></a></li>
+                </ul>
+                <button class="mobile-menu-button" type="button" aria-expanded="false"
+                aria-controls="mainmenu__list">
+                    <svg class="mobile-menu-button__icon" aria-hidden="true" width="32" height="32">
+                        <use class="mobile-menu-button__icon-menu" href="/images/sprite.svg#menu"></use>
+                        <use class="mobile-menu-button__icon-cross" href="/images/sprite.svg#cross"></use>
+                    </svg>
+                </button>
+            </nav>
+        </header>
+        <div class="page-content">
+            <h1 class="page-title">{{ title }}</h1>
+            <article class="article article--single">
+                {{ content | safe }}
+            </article>
+        </div>
+        <footer class="footer">
+            &copy;2021 Designed by V.Korotov <a href="#page-top" class="totop">Наверх</a>
+        </footer>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>

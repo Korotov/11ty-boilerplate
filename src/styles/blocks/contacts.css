@@ -1,0 +1,33 @@
+.contacts {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: .07em;
+    z-index: 1;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.contact-item__img {
+    margin-right: 0.5em;
+}
+@media (width <= 421px) {
+    .contacts {
+        place-self: center;
+
+    }
+}
+.contact-item__link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.social-link:link, .social-link:visited {
+    padding: 3px;
+    filter: brightness(0.8);
+    transition: all 1s ease;
+}
+.social-link:hover, .social-link:focus {
+    filter: brightness(1.2);
+}

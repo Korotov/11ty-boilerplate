@@ -1,0 +1,59 @@
+@import 'variables.css';
+@import 'fonts.css';
+/* ========================== BLOCKS ============================== */
+@import 'blocks/header.css';
+@import 'blocks/section.css';
+@import 'blocks/logo.css';
+@import 'blocks/main-menu.css';
+@import 'blocks/article.css';
+@import 'blocks/contacts.css';
+@import 'blocks/cards.css';
+@import 'blocks/footer.css';
+
+
+/* Page */
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', 'arial', x-locale-body ,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+
+}
+.page {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+    gap: .5rem;
+    line-height: 1.5;
+}
+.page-title {
+    text-align: center;
+    padding:.2em 0;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: .02em;
+}
+@media (width<920px) {
+    .page-title {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (width < 421px) {
+    .page-title {
+        padding: .1em 0;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--semi-accent-color);
+        letter-spacing: .01em;
+    }
+}
+

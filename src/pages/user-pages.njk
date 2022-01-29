@@ -1,0 +1,21 @@
+---
+layout: single.njk
+pagination:
+    data: testdata
+    size: 1
+    alias: user
+    addAllPagesToCollections: true
+tags: users
+permalink: "users/{{ user.username | slug }}/"
+eleventyComputed:
+    title: "Страница пользователя {{ user.name }}"
+
+---
+<h2>{{ user.name }}</h2>
+<p>Пишите письма на {{user.email}}. А также звоните по телефону {{user.phone}}</p>
+<h2>Все пользователи</h2>
+<ul>
+{% for u in collections.users %}
+<li><a href="{{u.url | url}}"> {{u.data.user.name}}</a></li>
+{% endfor %}
+</ul>

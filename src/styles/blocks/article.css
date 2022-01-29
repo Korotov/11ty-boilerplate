@@ -1,0 +1,23 @@
+.article {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+}
+@media (width<920px) {
+    .article {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.article h2 {
+    font-size: 1.2em;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    padding-top: .4em;
+    padding-bottom: .3em;
+}
+.article p {
+
+}

@@ -1,0 +1,21 @@
+/* Global variables */
+:root {
+    --mobile-bp: 420px;
+    --mobile-logo-width: 50px;
+    --mobile-logo-height: 50px;
+
+    --primary-text-color: #1A1A1A;
+    --primary-color: #F4F0E8;
+    --text-inverse-color: #F4F0E8;
+    --secondary-text-color: #771D00;
+    --secondary-color: rgb(255, 255, 255);
+    --accent-color: #FE8529;
+    --semi-accent-color: #EEB34B;
+
+}
+@media (width>700px) {
+    :root {
+        --mobile-logo-width: 80px;
+        --mobile-logo-height: 80px;
+    }
+}

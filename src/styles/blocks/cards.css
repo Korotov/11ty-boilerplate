@@ -1,0 +1,25 @@
+.cards 
+{
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+    grid-auto-rows: auto;
+    grid-gap: 3rem;
+    margin-top: 2rem;
+}
+.offer-card {
+    display: grid;
+    justify-items: center;
+}
+.offer-card__title {
+    padding-top: 1em;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+
+}
+.offer-card  img{
+    max-width: min(100%, 250px);
+    height: auto;
+    object-fit: cover;
+}

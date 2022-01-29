@@ -1,0 +1,40 @@
+.logo {
+    display:grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 1em;
+    line-height: 1;
+    z-index: 1;
+}
+.logo_inverse {
+    --accent-color: var(--text-inverse-color);
+    align-items: center;
+}
+/* Image */
+.logo__image {
+    width: var(--mobile-logo-width);
+    height: var(--mobile-logo-height);
+    grid-row: span 2;
+    align-self: center;
+}
+.logo__image_inverse {
+    --mobile-logo-width: 40px;
+    --mobile-logo-height: 40px;
+    grid-row: initial;
+
+}
+.logo__title {
+    align-self: end;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--accent-color);
+    line-height: 1.2;
+}
+.logo__title_alone {
+    align-self: center;
+}
+.logo__tagline {
+    font-size: 14px;
+
+}
