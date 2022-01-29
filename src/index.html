@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшая компания по изготовлению всего</title>
+    <link rel="stylesheet" href="index.css?ver=1.1.0">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header" id="page-top">
+
+            <div class="logo">
+                <img src="./images/logo.svg?ver=1.0.0" alt="" class="logo__image" />
+                <span class="logo__title">Компания.бел</span>
+                <span class="logo__tagline">быстро и качественно</span>
+            </div>
+
+            <nav class="main-menu">
+                <ul class="main-menu__list main-menu__list--hide" id="mainmenu__list">
+                    <li class="main-menu__item"><a href="#offers" class="main-menu__link"><span
+                                class="main-menu__item-text">Наша продукция</span></a></li>
+                    <li class="main-menu__item"><a href="#about" class="main-menu__link"><span
+                                class="main-menu__item-text">Наши преимущества</span></a></li>
+                    <li class="main-menu__item"><a href="#payments" class="main-menu__link"><span
+                                class="main-menu__item-text">Оплата</span></a></li>
+                    <li class="main-menu__item"><a href="#delivery" class="main-menu__link"><span
+                                class="main-menu__item-text">Доставка</span></a></li>
+                </ul>
+                <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mainmenu__list">
+                    <svg class="mobile-menu-button__icon" aria-hidden="true" width="32" height="32">
+                        <use class="mobile-menu-button__icon-menu" href="./images/sprite.svg#menu"></use>
+                        <use class="mobile-menu-button__icon-cross" href="./images/sprite.svg#cross"></use>
+                    </svg>
+                </button>
+            </nav>
+            <div class="contacts">
+                <div class="contact-item">
+                    <img class="contact-item__img" src="./images/phone.svg" aria-hidden="true" width="25" height="25">
+                    <a class="contact-item__link" href="tel:+375001234567">+375 00 123-45-67</a>
+                </div>
+                <div class="contact-item">
+                    <img class="contact-item__img" src="./images/email.svg" aria-hidden="true" width="25" height="25">
+                    <a class="contact-item__link" href="mailto:somemail@domen.by">somemail@domen.by</a>
+                </div>
+            </div>
+        </header>
+        <div class="page-content" id="offers">
+            <section class="section">
+                <h1 class="page-title">Наша продукция</h1>
+                <ul class="cards">
+                    <li class="offer-card"><img src="./images/offers/placeholder.png" alt="Биопосуда">
+                        <h3 class="offer-card__title">Категория продуктов</h3>
+                    </li>
+                    <li class="offer-card"><img src="./images/offers/placeholder.png" alt="Упаковка">
+                        <h3 class="offer-card__title">Категория продуктов</h3>
+                    </li>
+                    <li class="offer-card"><img src="./images/offers/placeholder.png" alt="Барные украшения">
+                        <h3 class="offer-card__title">Категория продуктов</h3>
+                    </li>
+                    <li class="offer-card"><img src="./images/offers/placeholder.png" alt="Бытовая химия">
+                        <h3 class="offer-card__title">Категория продуктов</h3>
+                    </li>
+                    <li class="offer-card"><img src="./images/offers/placeholder.png" alt="Средства дезинфекции">
+                        <h3 class="offer-card__title">Категория продуктов</h3>
+                    </li>
+                    <li class="offer-card"><img src="./images/offers/placeholder.png" alt="Салфетки и бумага">
+                        <h3 class="offer-card__title">Категория продуктов</h3>
+                    </li>
+                </ul>
+            </section>
+            <section class="section section_with-img section_with-img-right" id="about">
+                <img class="section__image" src="./images/education_school_icon_147469.svg" width="150" alt="">
+                <h2>Наши премущества</h2>
+                <div class="section__text">
+                    <ul>
+                        <li> Более трёхсот наименований продукции! </li>
+                        <li>Широкий ассортимент в наличии!</li>
+                        <li>Бесплатная доставка в кратчайшие сроки!</li>
+                        <li>Всегда на связи, работаем без выходных!</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section-header">Наша компания</h2>
+                <p> Предлагаем широкий ассортимент всего самого лучшего из всего возможного и невозможного.</p>
+
+                <p>Наш 200-летний опыт поставок и услуг, профессионализм и исключительная харизма не оставит вас равнодушными.
+                   Наш девиз: <strong> быть лучше, выше и сильнее</strong>
+                </p>
+                <p>Мы заинтересованы в долгострочном сотрудничестве, поэтому будем стараться во всю мощь</p>
+            </section>
+            <section class="section section_with-img" id="payments">
+                <img class="section__image" src="./images/payments/icon_bank_payment.svg" width="150" alt="">
+                <h2>Оплата</h2>
+                <div class="section__text">
+                    <ul>
+                        <li>Наличный и безналичный расчёт</li>
+                        <li>Работаем с НДС</li>
+                        <li>Возможна отсрочка и расрочка платежа</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section section_with-img section_with-img-right" id="delivery">
+                <img class="section__image" src="./images/delivery/icon_delivery_lorry_mkad.svg" width="150" alt="">
+                <h2>Доставка</h2>
+                <div class="section__text">
+                    <p>Мы осуществляем доставку ваших заказов по всей галактике</p>
+                    <p>При заказе от 100500.00 юнитов - доставим <strong>БЕСПЛАТНО</strong></p>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="logo-contacts">
+                    <div class="logo logo_inverse">
+                        <img class="logo__image logo__image_inverse" width="40" src="./images/logo.svg?ver=1.0.0"
+                            alt="логотип">
+                        <span class="logo__title logo__title_alone">Компания.бел</span>
+                    </div>
+                    <div class="contacts">
+                        <div class="contact-item">
+                            <img class="contact-item__img" src="./images/phone_invert.svg" aria-hidden="true" width="25"
+                                height="25">
+                            <a class="contact-item__link" href="tel:+375295903724">+375 00 123-45-67</a>
+                        </div>
+                        <div class="contact-item">
+                            <img class="contact-item__img" src="./images/email_invert.svg" aria-hidden="true" width="25"
+                                height="25">
+                            <a class="contact-item__link" href="mailto:somemail@domen.by">somemail@domen.by</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <h2 class="footer-header">Навигация</h2>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item"><a href="#offers" class="footer-menu__link"><span
+                                    class="footer-menu__item-text">Наша продукция</span></a></li>
+                        <li class="footer-menu__item"><a href="#about" class="footer-menu__link"><span
+                                    class="footer-menu__item-text">Наши преимущества</span></a></li>
+                        <li class="footer-menu__item"><a href="#payments" class="footer-menu__link"><span
+                                    class="footer-menu__item-text">Оплата</span></a></li>
+                        <li class="footer-menu__item"><a href="#delivery" class="footer-menu__link"><span
+                                    class="footer-menu__item-text">Доставка</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h2 class="footer-header">Мы в соцсетях:</h2>
+                    <div class="socials">
+                        <a class="social-link" href="https://www.instagram.com/user/"><img width="48" height="48" src="./images/social/logo_inst.svg"
+                                alt="Instagram"></a>
+                        <a class="social-link" href="https://www.tiktok.com/@user"><img width="48" height="48" src="./images/social/tiktok_logo1.svg"
+                                alt="TikTok"></a>
+                        <a class="social-link" href="https://vk.com/id0000000"><img width="48" height="48" src="./images/social/logo_vk.svg"
+                                alt="ВКонтакте"></a>
+                        <a class="social-link" href="https://www.facebook.com/profile.php?id=000000000"><img width="48" height="48" src="./images/social/logo_fb.svg"
+                                alt="Facebook"></a>
+                    </div>
+                    <h2 class="footer-header">Мы в мессенджерах:</h2>
+                    <div class="socials">
+                        <a class="social-link" href="https://t.me/user"><img width="48" height="48"
+                                src="./images/messenager/telegram_logo_icon_147228.svg" alt="Telegram"></a>
+                        <a class="social-link" href="viber://chat?number="><img width="48" height="48"
+                                src="./images/messenager/viber_tile_logo_icon_170260.svg" alt="Viber"></a>
+                        <a class="social-link" href="https://wa.me/000000"><img width="48" height="48"
+                                src="./images/messenager/iconfinder-social-media-applications-23whatsapp-4102606_113811.svg"
+                                alt="Whatsapp"></a>
+                    </div>
+                </div>
+                <p class="copyright">&copy;2022 Компания.бел. Все права защищены</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
