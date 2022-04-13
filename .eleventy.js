@@ -9,8 +9,8 @@ module.exports = function(config) {
     
     return {
         dir: {
-            input: 'src/pages',
-            includes: 'includes' 
+            input: 'src',
+            output: 'dist', 
         }
     }
 }

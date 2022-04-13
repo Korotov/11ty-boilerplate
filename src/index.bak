@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лучшая компания по изготовлению всего</title>
-    <link rel="stylesheet" href="index.css?ver=1.1.0">
+    <link rel="stylesheet" href="style.css?ver=1.1.0">
 </head>
 
 <body>
@@ -124,7 +124,7 @@
                         <div class="contact-item">
                             <img class="contact-item__img" src="./images/phone_invert.svg" aria-hidden="true" width="25"
                                 height="25">
-                            <a class="contact-item__link" href="tel:+375295903724">+375 00 123-45-67</a>
+                            <a class="contact-item__link" href="tel:+375001234567">+375 00 123-45-67</a>
                         </div>
                         <div class="contact-item">
                             <img class="contact-item__img" src="./images/email_invert.svg" aria-hidden="true" width="25"
@@ -173,7 +173,7 @@
             </div>
         </footer>
     </div>
-    <script src="./index.js"></script>
+    <script src="./bundle.js"></script>
 </body>
 
 </html>

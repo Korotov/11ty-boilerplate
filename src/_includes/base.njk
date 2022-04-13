@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="{{meta.siteLang}}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{meta.siteTitle}}</title>
+        <link rel="stylesheet" href="style.css?ver=1.1.0">
+    </head>
+    <body>
+        <div class="page">
+            <header class="header" id="page-top">
+                <div class="logo">
+                    <img src="./images/logo.svg?ver=1.0.0" alt="" class="logo__image"/>
+                    <span class="logo__title">{{meta.siteName}}</span>
+                    <span class="logo__tagline">{{meta.siteSlug}}</span>
+                </div>
+                <nav class="main-menu">
+                    <ul class="main-menu__list main-menu__list--hide" id="mainmenu__list">
+                        <li class="main-menu__item">
+                            <a href="#offers" class="main-menu__link">
+                                <span class="main-menu__item-text">Наша продукция</span>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#about" class="main-menu__link">
+                                <span class="main-menu__item-text">Наши преимущества</span>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#payments" class="main-menu__link">
+                                <span class="main-menu__item-text">Оплата</span>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#delivery" class="main-menu__link">
+                                <span class="main-menu__item-text">Доставка</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mainmenu__list">
+                        <svg class="mobile-menu-button__icon" aria-hidden="true" width="32" height="32">
+                            <use class="mobile-menu-button__icon-menu" href="./images/sprite.svg#menu"></use>
+                            <use class="mobile-menu-button__icon-cross" href="./images/sprite.svg#cross"></use>
+                        </svg>
+                    </button>
+                </nav>
+                <div class="contacts">
+                    <div class="contact-item">
+                        <img class="contact-item__img" src="./images/phone.svg" aria-hidden="true" width="25" height="25">
+                        <a class="contact-item__link" href="tel:+375001234567">+{{meta.contacts.phone}}</a>
+                    </div>
+                    <div class="contact-item">
+                        <img class="contact-item__img" src="./images/email.svg" aria-hidden="true" width="25" height="25">
+                        <a class="contact-item__link" href="mailto:{{meta.contacts.email}}">{{meta.contacts.email}}</a>
+                    </div>
+                </div>
+            </header>
+            {{ content | safe }}
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="logo-contacts">
+                        <div class="logo logo_inverse">
+                            <img class="logo__image logo__image_inverse" width="40" src="./images/logo.svg?ver=1.0.0" alt="логотип">
+                            <span class="logo__title logo__title_alone">Компания.бел</span>
+                        </div>
+                        <div class="contacts">
+                            <div class="contact-item">
+                                <img class="contact-item__img" src="./images/phone_invert.svg" aria-hidden="true" width="25" height="25">
+                                <a class="contact-item__link" href="tel:+375001234567">+375 00 123-45-67</a>
+                            </div>
+                            <div class="contact-item">
+                                <img class="contact-item__img" src="./images/email_invert.svg" aria-hidden="true" width="25" height="25">
+                                <a class="contact-item__link" href="mailto:somemail@domen.by">somemail@domen.by</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-menu">
+                        <h2 class="footer-header">Навигация</h2>
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item">
+                                <a href="#offers" class="footer-menu__link">
+                                    <span class="footer-menu__item-text">Наша продукция</span>
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#about" class="footer-menu__link">
+                                    <span class="footer-menu__item-text">Наши преимущества</span>
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#payments" class="footer-menu__link">
+                                    <span class="footer-menu__item-text">Оплата</span>
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#delivery" class="footer-menu__link">
+                                    <span class="footer-menu__item-text">Доставка</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h2 class="footer-header">Мы в соцсетях:</h2>
+                        <div class="socials">
+                            <a class="social-link" href="https://www.instagram.com/user/"><img width="48" height="48" src="./images/social/logo_inst.svg" alt="Instagram">
+                            </a>
+                            <a class="social-link" href="https://www.tiktok.com/@user"><img width="48" height="48" src="./images/social/tiktok_logo1.svg" alt="TikTok">
+                            </a>
+                            <a class="social-link" href="https://vk.com/id0000000"><img width="48" height="48" src="./images/social/logo_vk.svg" alt="ВКонтакте">
+                            </a>
+                            <a class="social-link" href="https://www.facebook.com/profile.php?id=000000000"><img width="48" height="48" src="./images/social/logo_fb.svg" alt="Facebook">
+                            </a>
+                        </div>
+                        <h2 class="footer-header">Мы в мессенджерах:</h2>
+                        <div class="socials">
+                            <a class="social-link" href="https://t.me/user"><img width="48" height="48" src="./images/messenager/telegram_logo_icon_147228.svg" alt="Telegram">
+                            </a>
+                            <a class="social-link" href="viber://chat?number="><img width="48" height="48" src="./images/messenager/viber_tile_logo_icon_170260.svg" alt="Viber">
+                            </a>
+                            <a class="social-link" href="https://wa.me/000000"><img
+                                    width="48"
+                                    height="48"
+                                    src="./images/messenager/iconfinder-social-media-applications-23whatsapp-4102606_113811.svg"
+                                    alt="Whatsapp">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="copyright">&copy;2022 Компания.бел. Все права защищены</p>
+                </div>
+            </footer>
+        </div>
+        <script src="./bundle.js"></script>
+    </body>
+</html>
